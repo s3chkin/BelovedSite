@@ -147,8 +147,7 @@
         font-size: 24px;
         color: white;
     }
-    
-    .video-container {
+    /* .video-container {
         position: relative;
         width: 640px;
         height: 360px;
@@ -157,8 +156,7 @@
         overflow: hidden;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
-    
-    .video-cover {
+     .video-cover {
         position: absolute;
         top: 0;
         left: 0;
@@ -202,7 +200,7 @@
         height: 100%;
         display: none;
         border-radius: 10px;
-    }
+    } */
     
     .card {
         text-align: center;
