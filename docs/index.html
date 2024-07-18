@@ -198,7 +198,7 @@
         <br>
         <div class="d-flex justify-content-center">
             <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 21px;">Кратък
-                филм за нашата любов:</p>
+                филм за нашата любов</p>
         </div>
         <div class="d-flex justify-content-center">
             <hr style="width: 40%;">
@@ -226,8 +226,11 @@
 
                 cover.style.display = "none";
                 video.style.display = "block";
+                video.muted = true; // Safari için gereklidir
                 video.play();
-                video.muted = false;
+                video.addEventListener('play', () => {
+                    video.muted = false; // Oynatıldıktan sonra sesi aç
+                });
             }
         </script>
     </section>
