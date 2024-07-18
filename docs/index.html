@@ -196,18 +196,14 @@
         <br>
         <div class="d-flex justify-content-center">
             <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 21px;">Кратък
-                филм за нашата любов
-            </p>
+                филм за нашата любов:</p>
         </div>
         <div class="d-flex justify-content-center">
             <hr style="width: 40%;">
         </div>
 
         <div class="d-flex justify-content-center">
-
-
-
-            <div class="video-container ">
+            <div class="video-container">
                 <div class="video-cover" onclick="playVideo()">
                     <img src="./img/video-cover.jpg" alt="Video Cover" class="cover-image">
                     <button class="play-button"><i class="bi bi-play-fill"></i></button>
@@ -229,9 +225,11 @@
                 cover.style.display = "none";
                 video.style.display = "block";
                 video.play();
+                video.muted = false;
             }
         </script>
-        <br><br>
+    </section>
+    <br><br>
     </section>
     <section style="background-color: antiquewhite;">
         <br><br>
