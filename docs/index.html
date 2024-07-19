@@ -19,22 +19,20 @@
 
 <body>
 
-    <div class="loader-container" id="loaderContainer">
+    <!-- <div class="loader-container" id="loaderContainer">
         <div class="loader">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </div>
-    <style>
 
-    </style>
     <script>
         window.addEventListener('load', function () {
             document.getElementById('loaderContainer').style.display = 'none';
             document.querySelector('.content').style.display = 'block';
         });
-    </script>
+    </script> -->
     <div class="fixed-top">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -81,6 +79,35 @@
             </div>
         </nav>
     </div>
+
+    <!-- <section id="home" class="page1">
+        <div class="bg-page1">
+            <ul id="list" class="d-flex justify-content-center">
+                <li style="animation: fadeIn 0.9s ease-in both">Уеб сайтът на любовта ни!</li>
+            </ul>
+            <br>
+            <div class="box fadeInUp" style="animation-delay:1s; margin-left: 15px; margin-right: 15px;">
+                От момента, в който те срещнах, знаех, че си специален/на. <br> Всеки ден, прекаран с теб, е като магия
+                – изпълнен с радост, смях и безкрайна обич.
+            </div>
+            <br><br><br>
+            <div class="box fadeInUp" style="animation-delay:1.5s;">
+                <a href="#LoveYou">
+                    <button class="imgButton">
+                        Разгледай
+                    </button></a>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="loader-container" id="loaderContainer">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <section id="home" class="page1">
         <div class="bg-page1">
             <ul id="list" class="d-flex justify-content-center">
@@ -100,6 +127,19 @@
             </div>
         </div>
     </section>
+
+    <script>
+        window.addEventListener('load', function () {
+            var bgImage = new Image();
+            bgImage.src = "./img/pexels-vanessa-garcia-6324455.jpg";
+            bgImage.onload = function () {
+                document.getElementById('loaderContainer').style.display = 'none';
+                document.getElementById('home').style.display = 'block';
+            };
+        });
+    </script>
+
+
 
     <section id="LoveYou" style="background-color: #f0eef1;">
         <br><br><br>
@@ -141,7 +181,7 @@
 
                             <div class="section2-beloverImgResp" data-aos="flip-up">
                                 <div class="d-flex justify-content-center" style=" margin-top: 50px;">
-                                    <img src="./img/sevgili1.jpg"
+                                    <img src="./img/sevgili1.jpg" decoding="async"
                                         style="border-radius: 50%; width: 250px; border: 2px dashed #f00;  padding: 2px;">
                                 </div>
 
@@ -167,7 +207,7 @@
 
             </div>
             <div style="float: right; margin-top: 50px;" data-aos="flip-up">
-                <img class="section2-beloverImg" src="./img/sevgili2.jpg"
+                <img class="section2-beloverImg" src="./img/sevgili2.jpg" decoding="async"
                     style="border-radius: 50%; width:  250px; border: 2px dashed #f00;  padding: 2px;">
             </div>
 
@@ -344,7 +384,7 @@
             </div>
             <div data-aos="fade" class="container mt-5">
                 <div class="card text-center shadow" style="max-width: 18rem; margin: auto;">
-                    <img src="./img/sofi.jpg" class="card-img-top" alt="Müzik Resmi">
+                    <img decoding="async" src="./img/sofi.jpg" class="card-img-top" alt="Müzik Resmi">
                     <div class="card-body">
                         <h5 class="card-title" id="songTitle">Един за друг</h5>
                         <p class="card-text" id="artistName">Софи Маринова</p>
@@ -494,7 +534,8 @@
                     </p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img style="width: 450px; border-radius: 10px; border: 2px dashed #f00;  padding: 2px;"
+                    <img decoding="async"
+                        style="width: 450px; border-radius: 10px; border: 2px dashed #f00;  padding: 2px;"
                         src="./img/sevgili3.jpg" alt="" class="img-fluid">
                 </div>
             </div>
@@ -514,18 +555,18 @@
             </div>
             <div class="responsive-container-block bg">
                 <div class="responsive-container-block img-cont">
-                    <img class="img" src="./img/sevgili4.1.jpg" data-aos="fade">
-                    <img class="img" src="./img/sevgili4.2.jpg" data-aos="fade">
-                    <img class="img img-last" src="./img/sevgili4.3.jpg" data-aos="fade">
+                    <img decoding="async" class="img" src="./img/sevgili4.1.jpg" data-aos="fade">
+                    <img decoding="async" class="img" src="./img/sevgili4.2.jpg" data-aos="fade">
+                    <img decoding="async" class="img img-last" src="./img/sevgili4.3.jpg" data-aos="fade">
                 </div>
                 <div class="responsive-container-block img-cont">
-                    <img class="img img-big" src="./img/sevgili4.4.jpg" data-aos="fade">
-                    <img class="img img-big img-last" src="./img/sevgili4.5.jpg" data-aos="fade">
+                    <img decoding="async" class="img img-big" src="./img/sevgili4.4.jpg" data-aos="fade">
+                    <img decoding="async" class="img img-big img-last" src="./img/sevgili4.5.jpg" data-aos="fade">
                 </div>
                 <div class="responsive-container-block img-cont">
-                    <img class="img" src="./img/sevgili4.6.jpg" data-aos="fade">
-                    <img class="img" src="./img/sevgili4.7.jpg" data-aos="fade">
-                    <img class="img" src="./img/sevgili4.8.jpg" data-aos="fade">
+                    <img decoding="async" class="img" src="./img/sevgili4.6.jpg" data-aos="fade">
+                    <img decoding="async" class="img" src="./img/sevgili4.7.jpg" data-aos="fade">
+                    <img decoding="async" class="img" src="./img/sevgili4.8.jpg" data-aos="fade">
                 </div>
             </div>
         </div>
